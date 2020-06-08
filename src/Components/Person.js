@@ -21,7 +21,7 @@ export const Person = ({name, image, hasGone, afterGone, resetPerson}) => {
 
   return (
     <Wrapper onClick={afterGone}>
-      {hasGone && <Overlay onClick={resetPerson}/>}
+      {hasGone && <Overlay/>}
 
       {image}
       {name}

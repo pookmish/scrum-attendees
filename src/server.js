@@ -18,13 +18,17 @@ io.on("connection", (socket) => {
     io.emit('getDataResponse', data)
   })
 
-  socket.on('personGone', (a) => {
-    io.emit('personGone', a);
+  socket.on('dataChanged', data => {
+    io.emit('dataChanged', data);
   })
 
-  socket.on('resetPerson', (a) => {
-    io.emit('resetPerson', a);
-  })
+  // socket.on('personGone', (a) => {
+  //   io.emit('personGone', a);
+  // })
+  //
+  // socket.on('resetPerson', (a) => {
+  //   io.emit('resetPerson', a);
+  // })
 });
 
 server.listen(port, () => console.log(`Listening on port ${port}`));
