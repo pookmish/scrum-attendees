@@ -1,0 +1,7 @@
+{
+    "name": "pookmish/scrum-attendees",
+    "description": "Installation Profile for Cardinal at Work",
+    "type": "drupal-custom-profile",
+    "license": "GPL-2.0-or-later",
+    "minimum-stability": "dev"
+}
